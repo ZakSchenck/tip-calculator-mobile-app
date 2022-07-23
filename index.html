@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <main>
+      <section class="tip-calculator__total-container">
+        <label for="tip-calculator__total">Total Amount</label>
+        <div>
+          <h1>$</h1>
+          <input
+            name="tip-calculator__total"
+            onkeypress="return isNumberAndDot(event)"
+            type="text"
+            maxlength="7"
+            id="tip-calculator__total"
+          />
+        </div>
+      </section>
+
+      <section class="tip-calculator__percent-container">
+        <div class="tip-section">
+          <label for="tip-calculator__percent" id="tip-label">Tip</label>
+          <div>
+            <h1>%</h1>
+            <input
+              name="tip-calculator__percent"
+              type="text"
+              maxlength="3"
+              onkeypress="return isNumberAndDot(event)"
+              id="tip-calculator__percent"
+            />
+          </div>
+          <div class="option-tip-grid">
+            <h3>10%</h3>
+            <h3>15%</h3>
+            <h3>20%</h3>
+            <h3>25%</h3>
+          </div>
+        </div>
+        <div class="tip-section">
+          <label for="tip-calculator__percent" id="tip-label">Tax</label>
+          <div>
+            <h1>%</h1>
+            <input
+              name="tax-calculator__percent"
+              type="text"
+              onkeypress="return isNumberAndDot(event)"
+              maxlength="4"
+              id="tax-calculator__percent"
+            />
+          </div>
+          <div class="option-tax-grid">
+            <h3>0%</h3>
+            <h3>3%</h3>
+            <h3>5%</h3>
+            <h3>10%</h3>
+          </div>
+        </div>
+      </section>
+      <div class="split-container">
+        <label for="points">Split</label>
+        <input
+          type="text"
+          maxlength="2"
+          onkeypress="return isNumber(event)"
+          id="split-input"
+        />
+      </div>
+      <button type="button">CALCULATE</button>
+      <p id="validator-error"></p>
+      <section class="results-container">
+          <div class="results-num-wrapper">
+              <h3>Tip:</h3>
+              <h3 id="tip-total"></h3>
+          </div>
+          <div class="results-num-wrapper">
+              <h3>Tax:</h3>
+              <h3 id="tax-total"></h3>
+          </div>
+          <div class="results-num-wrapper">
+              <h3>Amount:</h3>
+              <h3 id="amount-total"></h3>
+          </div>
+      </section>
+      <p id="footer">App created by Zak Schenck</p>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
