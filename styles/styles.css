@@ -33,6 +33,7 @@ label {
   left: 0;
   border: 2px solid #18af18;
   z-index: 100;
+  pointer-events: none;
 }
 
 button {
