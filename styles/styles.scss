@@ -26,10 +26,6 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 8px;
   overflow-x: hidden;
-  border: 1.5px solid $green;
-  position: fixed;
-  height: 100vh;
-  width: 100vw
 }
 
 label {
@@ -42,6 +38,16 @@ label {
     color: red;
     text-align: center;
     margin: 5px;
+}
+
+.border {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 2px solid $green;
+    z-index: 100;
 }
 
 button {
