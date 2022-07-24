@@ -2,10 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#18AF18" />
     <link rel="stylesheet" href="styles/styles.css" />
     <title>Tip Calculator</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="images/tipcalclogo192.png" />
   </head>
   <body>
     <main>
@@ -75,18 +77,18 @@
       <button type="button">CALCULATE</button>
       <p id="validator-error"></p>
       <section class="results-container">
-          <div class="results-num-wrapper">
-              <h3>Tip:</h3>
-              <h3 id="tip-total"></h3>
-          </div>
-          <div class="results-num-wrapper">
-              <h3>Tax:</h3>
-              <h3 id="tax-total"></h3>
-          </div>
-          <div class="results-num-wrapper">
-              <h3>Amount:</h3>
-              <h3 id="amount-total"></h3>
-          </div>
+        <div class="results-num-wrapper">
+          <h3>Tip:</h3>
+          <h3 id="tip-total"></h3>
+        </div>
+        <div class="results-num-wrapper">
+          <h3>Tax:</h3>
+          <h3 id="tax-total"></h3>
+        </div>
+        <div class="results-num-wrapper">
+          <h3>Amount:</h3>
+          <h3 id="amount-total"></h3>
+        </div>
       </section>
       <p id="footer">App created by Zak Schenck</p>
     </main>

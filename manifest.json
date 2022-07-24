@@ -1,0 +1,22 @@
+{
+    "name": "Basic Tip Calculator",
+    "short_name": "Basic Tip Calculator",
+    "background_color": "#282828",
+    "theme_color": "#18AF18",
+    "display": "standalone",
+    "start_url": ".", 
+    "icons": [
+        {
+            "src": "images/tipcalclogo192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "images/tipcalclogo512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
